@@ -1,0 +1,66 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Eczar&family=Lilita+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poiret+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Urbanist&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Geologica&display=swap');
+
+textarea::placeholder {
+    color: #d0c6c6;
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 9px;
+    margin-right: 2px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #242424;
+    border-radius: 5px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #ffffff;
+    border-radius: 5px;
+
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #ffffff;
+}
+
+
+
+/* width */
+.scroll-teal::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Track */
+.scroll-teal::-webkit-scrollbar-track {
+    background: #131515;
+    border-radius: 5px;
+}
+
+/* Handle */
+.scroll-teal::-webkit-scrollbar-thumb {
+    background: #100f0f;
+    border-radius: 5px;
+
+}
+
+/* Handle on hover */
+.scroll-teal::-webkit-scrollbar-thumb:hover {
+    background: #100f0f;
+}
+
+.bg-custom-color {
+    background-color: #100f0f; 
+  }

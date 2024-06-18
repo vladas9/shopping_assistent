@@ -1,0 +1,38 @@
+{
+    "manifest_version":3,
+    "name":"PedroBot",
+    "description":"Understand what you buy and be aware about everething you couldn't now.",
+    "version":"1.0.0",
+    "options_page":"options.html",
+    "icons":{
+        "16":"icon.png",
+        "48":"icon.png",
+        "128":"icon.png"
+    },
+    "action":{
+        "default_popup":"popup.html",
+        "default_title": "BuyBot popup",
+        "default_icon" : "icon.png"
+    },
+
+    "permissions":[
+        "tabs",
+        "bookmarks",
+        "unlimitedStorage",
+        "storage",
+        "identity",
+        "activeTab"
+    ],
+    "background":{
+      "service_worker":"background.js"  
+    },
+    "content_scripts": [
+        {
+            "matches": ["*://*.amazon.com/*", "https://www.chess.com/analysis*", "https://lichess.org/analysis/*"],
+            "js": ["contentScript.js"],
+            "all_frames": true,
+            "run_at": "document_end"        
+          }
+    ]
+
+}

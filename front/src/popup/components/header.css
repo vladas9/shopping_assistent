@@ -1,0 +1,22 @@
+@keyframes spin-fast {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  
+  .spin-fast {
+    animation: spin-fast 1.4s linear infinite; 
+  }
+  
+
+  .hovered span:nth-child(1):after {
+    content: "";
+  }
+  .hovered span {
+    color: #fff;
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 40px #fff;
+  }
+  
